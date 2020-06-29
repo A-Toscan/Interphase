@@ -1,0 +1,38 @@
+/********** TABLET ************/
+@media (min-width: 640px) {
+
+/********** TEXTO BANNER ***********/
+	.texto h2 {
+		font-size: 50px;
+	}
+	.texto p {
+		font-size: 26px;
+	}
+/********* CONTENEDOR ************/
+	.contenedor {
+		padding: 50px 10px;
+	}
+	.figuras {
+		display: flex;
+		justify-content: space-around; 
+	}
+	.parrafo  {
+		width: 30%;
+	}
+/********* ARTICULOS ***********/
+	.articulos {
+		padding: 50px 20px;
+	}
+	.fotos {
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}	
+	.cajas {
+		width: 44%;
+		margin-right: 30px;
+	}
+
+	
+}

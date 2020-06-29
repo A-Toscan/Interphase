@@ -1,0 +1,259 @@
+/********** MOVIL *************/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+header {
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+h1, h2, h3, h4, h5, h6, p, a {
+	font-weight: 300;
+}
+/********** MENU ***********/
+#chkmenu {
+	display: none;
+}
+#chkmenu:checked + .menu {
+	left: 0px;
+	transition: 1s;
+}
+#x {
+	position: absolute;
+	color: white;
+	top: 20px;
+	left: 180px;
+}
+.fa-bars {
+	color: white;
+	position: fixed;
+	background-color: rgba(144, 144, 144, 0.65);
+	padding: 10px 20px;
+	border-radius: 5px;
+	top: 10px;
+	left: 10px;
+}
+.menu {
+	background-image: linear-gradient(70deg, #181818 50%, #1a1a1a 50%);
+	position: fixed;
+	z-index: 100;
+	top:0px;
+	left:-250px;
+	bottom: 0px;
+	padding: 50px 10px;
+}
+.menu ul {
+	list-style: none;
+
+}
+.menu li {
+	margin-bottom: 30px;
+	color: white;
+	font-size: 16px;
+	border-bottom: solid 1px #444;
+	padding: 20px;
+}
+li:last-of-type {
+	border-bottom: none;
+}
+.menu a {
+	text-decoration: none;
+	color: white;
+	padding: 20px 120px 10px 0px;
+}
+/********** TEXTO BANNER **********/
+.texto {
+	color: white;
+	text-align: center;
+	padding: 150px 50px 80px;
+}
+.texto h2 {
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+.texto p {
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+.texto button {
+	background-color: transparent;
+	padding: 20px 60px;
+	border: solid 1px white;
+	border-radius: 5px;
+}
+.texto button:hover {
+	transition: 1s;
+	cursor: pointer;
+	background-color: rgba(300,300,300,0.1);
+}
+.texto a  {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+/*********** CONTENEDOR ************/
+.contenedor {
+	background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%);
+	color: white;
+	text-align: center;
+	padding: 50px;
+}
+.contenedor h2 {
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+.contendero h3 {
+	font-size: 20px;
+}
+.contenedor  .far, .contenedor .fas {
+	font-size: 50px;
+	width: 100px;
+	height: 100px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: solid 2px white;
+	border-radius: 50%;
+}
+.parrafo {
+	padding-top: 50px;
+}
+.parrafo p {
+	margin-top: 20px;
+	line-height: 30px;
+}
+/********** ARTICULOS ************/
+.articulos {
+	padding: 50px 20px;
+	text-align: center;
+	color: #666;
+}
+.articulos h2 {
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+.articulos h3 {
+	font-size: 20px;
+	padding-bottom: 30px;
+	border-bottom: double 3px #C8C8C8;
+}
+.articulos a {
+	text-decoration: none;
+	color: #666;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+.articulos button {
+	background-color: transparent;
+	padding: 20px 60px;
+	border: solid 1px #C8C8C8;
+	border-radius: 5px;
+}
+.articulos button:hover {
+	transition: 1s;
+	cursor: pointer;
+	border: solid 1px grey;
+}
+.cajas {
+	padding-top: 40px;
+}
+.cajas img {
+	display: block;
+	margin-bottom: 30px;
+	width: 100%;
+	border-radius: 4px;
+}
+.cajas h4 {
+	font-size: 20px;
+	padding: 20px 0px 30px;
+	border-bottom: double 3px #C8C8C8;
+}
+.cajas p {
+	padding: 20px 0px 30px;
+}
+/************ INFO ****************/
+.info {
+	background-color: #202222;
+	color: #888;
+	padding: 50px 20px 0px;
+}
+.info h2 {
+	font-size: 25px;
+	margin-bottom: 20px;
+	color: white;
+}
+.info h3 {
+	color: white;
+	font-size: 25;
+}
+.info p {
+	margin-bottom: 20px;
+}
+.info a {
+	color: #888;
+	display: block;
+	padding: 20px 0px;
+	border-bottom: solid 1px #404040;
+}
+.info a:last-of-type {
+	border-bottom: none;
+}
+.box {
+	padding-bottom: 40px;
+}
+.social a {
+	border-bottom: none;
+	text-decoration: none;
+	font-size: 25px;
+	display: inline-flex;
+	width: 50px;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	border: solid 1px #888;
+	border-radius: 50%;
+	margin: 20px 10px 30px 0px;
+}
+.linea  {
+	display: flex;
+	align-items: baseline;	
+	border-bottom: solid 1px #404040;
+	padding: 10px 0px;
+}
+.linea h2 {
+	margin-right: 30px;
+	width: 100px;
+}
+.linea a {
+	padding: 0px;
+}
+.linea:last-of-type {
+	border-bottom: none;
+}
+/********** FOOTER *******************/
+footer {
+	background-color: #202222;
+	color: #888;
+	padding: 0px 100px 50px;
+}
+.piede {
+	display: block;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+.piede a {
+	color: #888;
+}
